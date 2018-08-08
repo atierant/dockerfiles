@@ -4,3 +4,4 @@ RUN apt-get update -yqq && apt-get install -yqq unzip findutils make git php7.2-
 RUN pecl install rdkafka
 # Attention... En PHP 7.2, on enlève le .so et on laisse juste rdkafka
 RUN echo 'extension=rdkafka' >> /etc/php/7.2/cli/php.ini
+RUN composer global require 'phpmetrics/phpmetrics' -nq
