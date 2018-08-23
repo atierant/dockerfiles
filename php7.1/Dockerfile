@@ -1,6 +1,6 @@
 FROM debian:unstable
 ENV DEBIAN_FRONTEND="noninteractive"
-RUN apt-get update -yqq && apt-get -yqq install php-xml wget unzip findutils make git wkhtmltopdf php7.1-cli php7.1-gd composer php-xdebug php7.1-pdo php7.1-mbstring php7.1-dom php7.1-curl php7.1-xml php7.1-mysql php-pear librdkafka-dev php7.1-dev
+RUN apt-get update -yqq && apt-get -yqq install pkg-config libbson-1.0 libmongoc-1.0-0 php-xml wget unzip findutils make git wkhtmltopdf php7.1-cli php7.1-gd composer php-xdebug php7.1-pdo php7.1-mbstring php7.1-dom php7.1-curl php7.1-xml php7.1-mysql php-pear librdkafka-dev php7.1-dev
 # @see https://stackoverflow.com/questions/40999752/pear-error-xml-extension-not-found-on-ubuntu-14-04-after-installing-php-xml#41429187
 RUN pecl install rdkafka
 # Attention... En PHP 7.2, on enlève le .so et on laisse juste rdkafka
