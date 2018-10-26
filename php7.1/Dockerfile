@@ -13,3 +13,4 @@ RUN echo 'extension=rdkafka.so' >> /etc/php/7.1/cli/php.ini
 RUN wget -O /usr/local/bin/phpmetrics https://github.com/phpmetrics/PhpMetrics/releases/download/v2.4.1/phpmetrics.phar && chmod +x /usr/local/bin/phpmetrics
 RUN wget -O /usr/local/bin/phpunit https://phar.phpunit.de/phpunit-7.phar && chmod +x /usr/local/bin/phpunit
 RUN wget -O /usr/local/bin/phpcov https://phar.phpunit.de/phpcov.phar && chmod +x /usr/local/bin/phpcov
+RUN apt-get -yqq install php-apcu
