@@ -1,4 +1,4 @@
-FROM php:7.1
+FROM php:7.1-stretch
 ENV DEBIAN_FRONTEND="noninteractive"
 RUN echo 'deb http://ftp.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/stretch-backports.list
 RUN apt-get update -yqq && apt-get upgrade -yqq
