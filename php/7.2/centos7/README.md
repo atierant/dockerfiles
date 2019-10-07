@@ -1,0 +1,1 @@
+https://hub.docker.com/r/centos/php-72-centos7
